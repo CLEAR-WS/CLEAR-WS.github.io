@@ -1,3 +1,5 @@
+![CLEAR-AI Workshop Banner](workshop.jpg)
+
 # CLEAR-AI Workshop: Collaborative Methods and Tools for Engineering and Evaluating Transparency in AI
 
 ## Venue
