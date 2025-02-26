@@ -3,8 +3,12 @@
 # CLEAR-AI Workshop: Collaborative Methods and Tools for Engineering and Evaluating Transparency in AI
 
 ## Venue
-- EUROPEAN CONFERENCE ON ARTIFICIAL INTELLIGENCE (ECAI 2025)
+- EUROPEAN CONFERENCE ON ARTIFICIAL INTELLIGENCE (ECAI 2025), Bologna, Italy
 - Registration and information: [https://ecai2025.org/](https://ecai2025.org/)
+
+## Important Dates
+
+TBA
 
 ## Brief Introduction
 As AI systems become integral to critical decision-making processes, ensuring their transparency, fairness, and accountability is more essential than ever. Therefore, it is not surprising that the AI Act, the world's first attempt to systematically regulate artificial intelligence, places significant emphasis on this need. In particular, the Act establishes transparency as a fundamental principle, aiming to safeguard user rights and foster trust and reliability in new technologies. In this context, transparency assumes a salient value as a prerequisite for ensuring the fair and responsible development and deployment of AI.
@@ -35,7 +39,7 @@ The workshop welcomes contributions on topics including, but not limited to:
 Submissions should emphasize the integration of technical rigour with societal relevance to address the challenges of building trustworthy AI systems.
 
 ## Format and Structure
-The CLEAR-AI Workshop is proposed as a full-day workshop to allow sufficient time for keynote talks, presentations, interactive sessions, and discussions.
+The CLEAR-AI Workshop is proposed as a half-day workshop to allow sufficient time for keynote talks, presentations, interactive sessions, and discussions.
 
 The workshop will include the following activities:
 - **Keynote**: An invited speaker will present state-of-the-art research and practical insights on participatory and transparent AI systems
@@ -67,7 +71,6 @@ The CLEAR-AI Workshop targets an interdisciplinary audience, including:
 - Tim Miller, University of Queensland
 
 ## Program Committee
-- Chiara Gallese, Department of Law, University of Torino, Italy
 - Tony Ribeiro, Laboratoire des Sciences du Numérique de Nantes
 - Agate Balayn, TU Delft
 - Neil Yorke-Smith, TU Delft
@@ -76,7 +79,7 @@ The CLEAR-AI Workshop targets an interdisciplinary audience, including:
 - Jayati Deshmukh, University of Southampton
 - Tim Miller, University of Queensland
 - Imane Hmiddou, ALLAI
-- Amro Najjar
+- Amro Najjar, Luxembourg Institute of Science and Technology
 
 ## Contact
 Please direct any questions regarding the workshop to:
