@@ -80,11 +80,9 @@ The CLEAR-AI Workshop targets an interdisciplinary audience, including:
 ## Program Committee
 - Tony Ribeiro, Laboratoire des Sciences du Numérique de Nantes
 - Agate Balayn, TU Delft
-- Neil Yorke-Smith, TU Delft
 - Daniel Kostic, Leiden University
 - Giuseppe Primiero, University of Milan
 - Jayati Deshmukh, University of Southampton
-- Tim Miller, University of Queensland
 - Imane Hmiddou, ALLAI
 - Amro Najjar, Luxembourg Institute of Science and Technology
 
