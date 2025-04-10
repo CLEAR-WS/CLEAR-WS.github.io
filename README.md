@@ -27,7 +27,7 @@ Perspectives on the above issues from under-represented countries are particular
 
 ## Submission guidelines and Proceedings
 Authors are invited to submit full papers of 5,000 TO 8,000 words following the ACM guidlines [https://www.acm.org/publications/authors/submissions](https://www.acm.org/publications/authors/submissions) . Submissions will be reviewed by at least two reviewers in a double blind review process. Paper should be submitted through our Easychair [link](https://easychair.org/conferences?conf=clearwsecai2025). At least one author of each accepted paper is required to register for the workshop and for ECAI. Informal proceedings will be distributed to ECAI 2025 registrants in electronic form.
-We are arranging for selected papers to be published in a special section of the ACM Journal on Responsible Computing [https://dl.acm.org/journal/jrc](https://dl.acm.org/journal/jrc) .
+After the workshop, selected papers can be submitted for publication in a special section of the ACM Journal on Responsible Computing [https://dl.acm.org/journal/jrc](https://dl.acm.org/journal/jrc) .
 
 ## Important Dates
 - Open for submissions: Tuesday, 15 April 2025
