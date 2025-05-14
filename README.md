@@ -26,7 +26,7 @@ Submissions should emphasize the integration of technical rigour with societal r
 Perspectives on the above issues from under-represented countries are particularly welcome.
 
 ## Submission guidelines and Proceedings
-Authors are invited to submit full papers of 5,000 TO 8,000 words following the ACM guidlines [https://www.acm.org/publications/authors/submissions](https://www.acm.org/publications/authors/submissions) . Submissions will be reviewed by at least two reviewers in a double blind review process. Paper should be submitted through our Easychair [link](https://easychair.org/conferences?conf=clearwsecai2025). At least one author of each accepted paper is required to register for the workshop and for ECAI. Informal proceedings will be distributed to ECAI 2025 registrants in electronic form.
+Authors are invited to submit full papers of 5,000 to 8,000 words following the ACM guidlines [https://www.acm.org/publications/authors/submissions](https://www.acm.org/publications/authors/submissions) . Submissions will be reviewed by at least two reviewers in a double blind review process. Paper should be submitted through our Easychair [link](https://easychair.org/conferences?conf=clearwsecai2025). At least one author of each accepted paper is required to register for the workshop and for ECAI. Informal proceedings will be distributed to ECAI 2025 registrants in electronic form.
 After the workshop, selected papers can be submitted for publication in a special section of the ACM Journal on Responsible Computing [https://dl.acm.org/journal/jrc](https://dl.acm.org/journal/jrc) .
 
 ## Important Dates
