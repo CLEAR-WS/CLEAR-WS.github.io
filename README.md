@@ -31,7 +31,7 @@ After the workshop, selected papers can be submitted for publication in a specia
 
 ## Important Dates
 - Open for submissions: Tuesday, 15 April 2025
-- Deadline for workshop papers: Saturday, 31 May 2025 (Extended)
+- Deadline for workshop papers: Sunday, 15 June 2025 (Extended)
 - Notification date for workshop papers: Tuesday, 15 July 2025
 - Notification of intent to use review transfer option: Tuesday, 1 July 2025
 - Final workshop schedule published: Thursday, 8 August 2025
