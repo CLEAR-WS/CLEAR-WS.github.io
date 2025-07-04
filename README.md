@@ -26,15 +26,17 @@ Submissions should emphasize the integration of technical rigour with societal r
 Perspectives on the above issues from under-represented countries are particularly welcome.
 
 ## Submission guidelines and Proceedings
-Authors are invited to submit full papers of 5,000 to 8,000 words following the ACM guidlines [https://www.acm.org/publications/authors/submissions](https://www.acm.org/publications/authors/submissions) . Submissions will be reviewed by at least two reviewers in a double blind review process. Paper should be submitted through our Easychair [link](https://easychair.org/conferences?conf=clearwsecai2025). At least one author of each accepted paper is required to register for the workshop and for ECAI. Informal proceedings will be distributed to ECAI 2025 registrants in electronic form.
+Authors are invited to submit full papers of 5,000 to 8,000 words following the ACM guidlines [https://www.acm.org/publications/authors/submissions](https://www.acm.org/publications/authors/submissions) . Submissions will be reviewed by at least two reviewers in a double blind review process. Paper, including transfer papers from the ECAI main track, should be submitted through our Easychair [link](https://easychair.org/conferences?conf=clearwsecai2025). At least one author of each accepted paper is required to register for the workshop and for ECAI. Informal proceedings will be distributed to ECAI 2025 registrants in electronic form.
 After the workshop, selected papers can be submitted for publication in a special section of the ACM Journal on Responsible Computing [https://dl.acm.org/journal/jrc](https://dl.acm.org/journal/jrc) .
 
 ## Important Dates
 - Open for submissions: Tuesday, 15 April 2025
-- Deadline for workshop papers: Sunday, 15 June 2025 (Extended)
-- Notification date for workshop papers: Tuesday, 15 July 2025
-- Notification of intent to use review transfer option: Tuesday, 1 July 2025
-- Final workshop schedule published: Thursday, 8 August 2025
+- 1st Paper submission cut-off date: Thursday, 15 May 2025, Sunday 15 June 2025
+- 2nd Paper submission cut-off date: Friday, August 15 2025
+- Notification date for 1st round of submission: Tuesday, 15 July 2025
+- Notification date for 2nd round of submission: TBA
+- Transfer option: Friday, August 15 2025
+- Final workshop schedule published: TBA
 
 ## Venue
 - EUROPEAN CONFERENCE ON ARTIFICIAL INTELLIGENCE (ECAI 2025), Bologna, Italy
