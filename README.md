@@ -32,10 +32,9 @@ After the workshop, selected papers can be submitted for publication in a specia
 ## Important Dates
 - Open for submissions: Tuesday, 15 April 2025
 - 1st Paper submission cut-off date: Sunday 15 June 2025
-- 2nd Paper submission cut-off date: Friday, August 15 2025
-- Notification date for 1st round of submission: Tuesday, 15 July 2025
-- Notification date for 2nd round of submission: TBA
-- Transfer option: Friday, August 15 2025
+  Notification date for 1st round of submission: Tuesday, 15 July 2025
+- 2nd Paper submission cut-off date (including manual transfer from main conference): Friday, August 15 2025
+  Notification date for 2nd round of submission: Wednesday, August 20 2025
 - Final workshop schedule published: TBA
 
 ## Venue
