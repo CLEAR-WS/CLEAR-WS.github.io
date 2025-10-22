@@ -99,7 +99,7 @@ After the workshop, selected papers can be submitted for publication in a specia
 - Notification date for 1st round of submission: Tuesday, 15 July 2025
 - 2nd Paper submission cut-off date (new papers and manual transfer from main conference): Friday,  15 August 2025
 - Notification date for 2nd round of submission: Wednesday, 20 August 2025
-- Final workshop schedule published: TBA
+- Final workshop schedule published: Wednesday, 22 October 2025
 
 ## Venue
 - EUROPEAN CONFERENCE ON ARTIFICIAL INTELLIGENCE (ECAI 2025), Bologna, Italy
