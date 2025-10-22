@@ -2,6 +2,70 @@
 
 # CLEAR-AI Workshop: Collaborative Methods and Tools for Engineering and Evaluating Transparency in AI [ECAI 2025]
 
+## Workshop Schedule
+
+### Morning Session
+
+#### 09:30–10:30 | Welcome & Introduction
+**Presentation:** "Enhancing Active Learning efficiency with a Recommendation System based on Annotator Accuracy, Mood, and Fatigue"  
+*Diana Mortágua, Luis Macedo and F. Amílcar Cardoso*
+
+---
+
+#### 10:30–11:00 | ☕ Coffee Break
+
+---
+
+#### 11:00–12:30 | Session 1: Presentations
+
+**"A Visual Reader's Eye for Image-Generation AI"**  
+*Randi Cecchine and Martha Larson*
+
+**"Uncertainty-Guided Expert-AI Collaboration for Efficient Soil Horizon Annotation"**  
+*Teodor Chiaburu, Vipin Singh, Frank Haußer and Felix Biessmann*
+
+**"Towards Transparent and Interpretable Credit Risk Models: Classifier Selection Insights from Australia, Germany, and Taiwan"**  
+*Krzysztof Lorenz, Piotr Gutowski, Anna Drab-Kurowska, Agnieszka Budziewicz-Guźlecka, Ewelina Gutowska, Magdalena Majchrzak, Tymoteusz Miller, Irmina Durlik and Ewelina Kostecka*
+
+---
+
+#### 12:30–14:00 | 🍽️ Lunch Break
+
+---
+
+### Afternoon Session
+
+#### 14:00–15:30 | Session 2: Presentations
+
+**"Information Flow Modeling for Transparent and Accountable AI Act Assessment"**  
+*Mattias Brännström, Themis Xanthopoulou and Lili Jiang*
+
+**"The Machinery of Government: Bureaucracy, Automation and Institutional Black-Boxing"**  
+*Diletta Huyskes*
+
+**"Making Privacy Risks Transparent: Causal Analysis of Generalization and Membership Inference Attack in Differentially Private SGD"**  
+*Zhou Zhou and Lili Jiang*
+
+---
+
+#### 15:30–16:00 | ☕ Coffee Break
+
+---
+
+#### 16:00–17:00 | Roundtable Discussion
+Interactive discussion with presenters and organizers
+
+---
+
+#### 17:00–17:15 | Closing Remarks
+
+---
+
+## About the Workshop
+
+The CLEAR-AI Workshop brings together researchers, practitioners, and stakeholders to address transparency in AI systems through collaborative and participatory approaches. Below you'll find more details about the workshop's focus, submission guidelines, and how to participate.
+
+
 ## Problem Description
 Transparency takes up a central instrumental role in addressing and understanding a wide range of problems from legal to ethical in AI development and deployment. Yet, transparency is often a vague and hard to pin down notion from a objective perspective and is defined differently on different levels in the understanding of AI systems.
 
