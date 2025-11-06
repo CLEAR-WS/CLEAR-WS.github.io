@@ -65,6 +65,16 @@ Interactive discussion with presenters and organizers
 
 The CLEAR-AI Workshop brings together researchers, practitioners, and stakeholders to address transparency in AI systems through collaborative and participatory approaches. Below you'll find more details about the workshop's focus, submission guidelines, and how to participate.
 
+## Background
+As AI systems become integral to critical decision-making processes, ensuring their transparency, fairness, and accountability is more essential than ever. Therefore, it is not surprising that the AI Act, the world's first attempt to systematically regulate artificial intelligence, places significant emphasis on this need. In particular, the Act establishes transparency as a fundamental principle, aiming to safeguard user rights and foster trust and reliability in new technologies. In this context, transparency assumes a salient value as a prerequisite for ensuring the fair and responsible development and deployment of AI.
+
+Achieving these objectives necessitates not only the establishment of robust technical frameworks but also the active engagement of a diverse range of stakeholders to ensure that the development of AI is aligned with societal values. In this regard, interdisciplinary research and implementation initiatives have been identified as crucial to facilitate progress in this area.
+
+Following from this, the workshop focuses on advancing the design, monitoring, and evaluation of transparent AI systems. By combining participatory approaches that amplify stakeholder voices with formal methodologies that ensure rigour and reproducibility, the workshop aims to advance the state of the art in trustworthy AI, bridging technical and social perspectives.
+
+The CLEAR-AI Workshop addresses the critical need for interdisciplinary collaboration to advance methods, tools, and evaluation frameworks that ensure transparency, fairness, and trustworthiness in AI systems. In addition, specific focus is put on tackling the challenges emerging from the participatory setting. Submissions should emphasize the integration of technical rigour with societal relevance to address the challenges of building trustworthy AI systems. The CLEAR-AI Workshop aligns with ECAI 2025's mission of advancing sustainable AI by promoting transparency, participatory approaches, and rigorous methods that ensure accountability and societal alignment.
+
+
 
 ## Problem Description
 Transparency takes up a central instrumental role in addressing and understanding a wide range of problems from legal to ethical in AI development and deployment. Yet, transparency is often a vague and hard to pin down notion from a objective perspective and is defined differently on different levels in the understanding of AI systems.
@@ -89,9 +99,69 @@ Submissions should emphasize the integration of technical rigour with societal r
 
 Perspectives on the above issues from under-represented countries are particularly welcome.
 
-## Submission guidelines and Proceedings
+## Challenges and Workshop perspective
+
+### Challenge 1. Reframing Transparency as a Relation, Not a Static Property
+
+Transparency is too often treated as something systems have rather than something they provide in relation to those who use, audit, or are affected by them.
+This theme challenges us to rethink transparency as an active relation between information and its audience, asking what kinds of transparency actually reach and serve their intended stakeholders. Taking a step back this theme pushes us to reflect about the stakeholders behind the system design and their agency through the system.
+
+
+### Challenge 2. Connecting Methods to Meaning and Purpose
+
+Technical tools and conceptual models for transparency abound, but they often operate without a clear sense of for whom and for what they exist.
+This theme explores how metrics, explanations, and frameworks can be oriented toward concrete purposes—whether legal accountability, informed oversight, or effective user understanding—rather than remaining abstract or self-referential.
+                                                                                                                                                                                                     ### Challenge 3. Moving Toward Stakeholder-Centered Transparency
+
+The ultimate challenge remains to make transparency usable, relevant, and responsive.
+This theme looks at how today’s methods can evolve—through participatory, methodological, or institutional innovation—toward transparency that genuinely empowers those who depend on it.
+
+## Target Audience
+The CLEAR-AI Workshop targets an interdisciplinary audience, including:
+- Researchers and practitioners in AI, machine learning, and data science
+- Experts in human-computer interaction and participatory design
+- Ethicists, policymakers, and legal professionals focusing on AI governance
+- Developers and engineers working on tools and frameworks for AI transparency
+- Stakeholders from academia, industry, and civil society interested in AI transparency
+
+
+
+## Submission guidelines 
 Authors are invited to submit full papers of 5,000 to 8,000 words following the ACM guidlines [https://www.acm.org/publications/authors/submissions](https://www.acm.org/publications/authors/submissions) . Submissions will be reviewed by at least two reviewers in a double blind review process. Paper, including transfer papers from the ECAI main track, should be submitted through our Easychair [link](https://easychair.org/conferences?conf=clearwsecai2025). At least one author of each accepted paper is required to register for the workshop and for ECAI. Informal proceedings will be distributed to ECAI 2025 registrants in electronic form.
-After the workshop, selected papers can be submitted for publication in a special section of the ACM Journal on Responsible Computing [https://dl.acm.org/journal/jrc](https://dl.acm.org/journal/jrc) .
+
+## 📚 Special Issue: ACM Journal on Responsible Computing
+
+### Extended Publication Opportunity
+
+Following the workshop, we are pleased to announce a **special section** in the [ACM Journal on Responsible Computing (JRC)](https://dl.acm.org/journal/jrc) dedicated to transparency in AI systems. This special section will be part of a regular issue of the JRC, with additional submissions from workshop participants also welcomed.
+
+### 🎯 Submission Requirements
+
+**Post-Workshop Revision:**
+- Connect your original work to the three main challenges addressed in the workshop. Additional submissions by workshop participants will also be considered as long as they connect to the workshop themes.
+- Incorporate feedback received during your presentation
+- Expand and deepen your analysis with additional perspectives
+
+
+### 📅 Timeline
+
+| **Submission Deadline** | **31 January 2026** |
+
+
+### ✅ Publication Details
+
+- **Open Access:** Policy to be confirmed [TBC]
+- **Repository:** Details to be confirmed [TBC]
+- **Review Process:** 
+- Workshop organizers will serve as guest editors
+- Reviewers will include a mix of paper authors, workshop participants, original reviewers, and external reviewers
+
+### 💡 Contact person
+
+**Francien Dechesne**  
+📧 [f.dechesne@law.leidenuniv.nl](mailto:f.dechesne@law.leidenuniv.nl)
+
+
 
 ## Important Dates
 - Open for submissions: Tuesday, 15 April 2025
@@ -106,27 +176,7 @@ After the workshop, selected papers can be submitted for publication in a specia
 - Registration and information: [https://ecai2025.org/](https://ecai2025.org/)
 
 
-## Background
-As AI systems become integral to critical decision-making processes, ensuring their transparency, fairness, and accountability is more essential than ever. Therefore, it is not surprising that the AI Act, the world's first attempt to systematically regulate artificial intelligence, places significant emphasis on this need. In particular, the Act establishes transparency as a fundamental principle, aiming to safeguard user rights and foster trust and reliability in new technologies. In this context, transparency assumes a salient value as a prerequisite for ensuring the fair and responsible development and deployment of AI.
 
-Achieving these objectives necessitates not only the establishment of robust technical frameworks but also the active engagement of a diverse range of stakeholders to ensure that the development of AI is aligned with societal values. In this regard, interdisciplinary research and implementation initiatives have been identified as crucial to facilitate progress in this area.
-
-Following from this, the workshop focuses on advancing the design, monitoring, and evaluation of transparent AI systems. By combining participatory approaches that amplify stakeholder voices with formal methodologies that ensure rigour and reproducibility, the workshop aims to advance the state of the art in trustworthy AI, bridging technical and social perspectives.
-
-The CLEAR-AI Workshop addresses the critical need for interdisciplinary collaboration to advance methods, tools, and evaluation frameworks that ensure transparency, fairness, and trustworthiness in AI systems. In addition, specific focus is put on tackling the challenges emerging from the participatory setting. Submissions should emphasize the integration of technical rigour with societal relevance to address the challenges of building trustworthy AI systems. The CLEAR-AI Workshop aligns with ECAI 2025's mission of advancing sustainable AI by promoting transparency, participatory approaches, and rigorous methods that ensure accountability and societal alignment.
-
-
-## Format and Structure
-The CLEAR-AI Workshop will be a half-day workshop with clustered short paper presentations followed by discussions around the topic. The workshop program will be announced on August 8th.
-
-
-## Target Audience
-The CLEAR-AI Workshop targets an interdisciplinary audience, including:
-- Researchers and practitioners in AI, machine learning, and data science
-- Experts in human-computer interaction and participatory design
-- Ethicists, policymakers, and legal professionals focusing on AI governance
-- Developers and engineers working on tools and frameworks for AI transparency
-- Stakeholders from academia, industry, and civil society interested in AI transparency
 
 ## Organising Committee
 - **Themis Dimitra Xanthopoulou**, Department of Computing Science, Umeå University
