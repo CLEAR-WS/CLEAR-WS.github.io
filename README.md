@@ -61,6 +61,33 @@ Interactive discussion with presenters and organizers
 
 ---
 
+
+## Accepted Papers
+
+The following papers have been accepted for presentation at the CLEAR-AI Workshop:
+
+**"Enhancing Active Learning efficiency with a Recommendation System based on Annotator Accuracy, Mood, and Fatigue"**  
+*Diana Mortágua, Luis Macedo and F. Amílcar Cardoso*
+
+**"A Visual Reader's Eye for Image-Generation AI"**  
+*Randi Cecchine and Martha Larson*
+
+**"Uncertainty-Guided Expert-AI Collaboration for Efficient Soil Horizon Annotation"**  
+*Teodor Chiaburu, Vipin Singh, Frank Haußer and Felix Biessmann*
+
+**"Towards Transparent and Interpretable Credit Risk Models: Classifier Selection Insights from Australia, Germany, and Taiwan"**  
+*Krzysztof Lorenz, Piotr Gutowski, Anna Drab-Kurowska, Agnieszka Budziewicz-Guźlecka, Ewelina Gutowska, Magdalena Majchrzak, Tymoteusz Miller, Irmina Durlik and Ewelina Kostecka*
+
+**"Information Flow Modeling for Transparent and Accountable AI Act Assessment"**  
+*Mattias Brännström, Themis Xanthopoulou and Lili Jiang*
+
+**"The Machinery of Government: Bureaucracy, Automation and Institutional Black-Boxing"**  
+*Diletta Huyskes*
+
+**"Making Privacy Risks Transparent: Causal Analysis of Generalization and Membership Inference Attack in Differentially Private SGD"**  
+*Zhou Zhou and Lili Jiang*
+
+
 ## About the Workshop
 
 The CLEAR-AI Workshop brings together researchers, practitioners, and stakeholders to address transparency in AI systems through collaborative and participatory approaches. Below you'll find more details about the workshop's focus, submission guidelines, and how to participate.
