@@ -73,10 +73,12 @@ The following papers have been accepted for presentation at the CLEAR-AI Worksho
 *Randi Cecchine and Martha Larson*
 
 **"Uncertainty-Guided Expert-AI Collaboration for Efficient Soil Horizon Annotation"**  
-*Teodor Chiaburu, Vipin Singh, Frank Haußer and Felix Biessmann*
+*Teodor Chiaburu, Vipin Singh, Frank Haußer and Felix Biessmann*<br>
+📄 [Full text available](https://arxiv.org/abs/2509.24873)
 
 **"Towards Transparent and Interpretable Credit Risk Models: Classifier Selection Insights from Australia, Germany, and Taiwan"**  
 *Krzysztof Lorenz, Piotr Gutowski, Anna Drab-Kurowska, Agnieszka Budziewicz-Guźlecka, Ewelina Gutowska, Magdalena Majchrzak, Tymoteusz Miller, Irmina Durlik and Ewelina Kostecka*
+
 
 **"Information Flow Modeling for Transparent and Accountable AI Act Assessment"**  
 *Mattias Brännström, Themis Xanthopoulou and Lili Jiang*
