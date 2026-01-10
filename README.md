@@ -174,8 +174,13 @@ Following the workshop, we are pleased to announce a **special section** in the 
 
 ### 📅 Timeline
 
-| **Submission Deadline** | **31 January 2026** |
+**Submission Deadline: March 1, 2026**
 
+- **First-round review decisions:** April 20, 2026
+- **Deadline for revision submissions:** May 31, 2026
+- **Notification of final decisions:** June 22, 2026
+- **Submission of camera-ready manuscripts:** August 15, 2026
+- **Tentative publication:** End of 2026
 
 ### ✅ Publication Details
 
