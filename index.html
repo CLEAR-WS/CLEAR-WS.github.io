@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CLEAR Workshop Series</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #6e0028;
+      --ink-light: #9e2a4a;
+      --cream: #fdf5f5;
+      --gold: #b8405a;
+      --gold-light: #d98090;
+      --divider: #f0d8d8;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--ink);
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(192,120,136,0.04) 40px,
+        rgba(192,120,136,0.04) 41px
+      );
+      pointer-events: none;
+    }
+    .header-eyebrow {
+      font-family: 'Jost', sans-serif;
+      font-weight: 500;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+    header h1 em {
+      color: var(--gold-light);
+      font-style: italic;
+    }
+    .header-subtitle {
+      font-size: 0.85rem;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+      color: rgba(255,255,255,0.55);
+      max-width: 540px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .gold-rule {
+      width: 48px;
+      height: 2px;
+      background: var(--gold);
+      margin: 1.4rem auto 1.2rem;
+    }
+
+    /* ── Main ── */
+    main {
+      flex: 1;
+      max-width: 860px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    .section-label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    /* ── Year Cards ── */
+    .editions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+    @media (max-width: 600px) {
+      .editions { grid-template-columns: 1fr; }
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--divider);
+      border-radius: 2px;
+      padding: 2.2rem 2rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.25s ease;
+    }
+    .card:hover {
+      box-shadow: 0 8px 32px rgba(59,26,46,0.10);
+      transform: translateY(-3px);
+      border-color: var(--gold-light);
+    }
+    .card:hover::after { transform: scaleX(1); }
+
+    .card.current { border-left: 3px solid #b8405a; }
+    .card.current .card-badge {
+      background: var(--gold);
+      color: #fff;
+    }
+
+    .card-year {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1;
+      margin-bottom: 0.6rem;
+    }
+    .card-badge {
+      display: inline-block;
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      background: var(--divider);
+      color: var(--ink-light);
+      padding: 0.25rem 0.6rem;
+      border-radius: 1px;
+      margin-bottom: 1rem;
+    }
+    .card-conference {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--gold);
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+    .card-location {
+      font-size: 0.82rem;
+      color: var(--ink-light);
+      font-weight: 300;
+      line-height: 1.5;
+      flex: 1;
+    }
+    .card-arrow {
+      margin-top: 1.6rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .card-arrow::after {
+      content: '→';
+      transition: transform 0.2s;
+    }
+    .card:hover .card-arrow::after { transform: translateX(4px); }
+
+    /* ── About strip ── */
+    .about-strip {
+      border-top: 1px solid var(--divider);
+      padding-top: 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      align-items: start;
+    }
+    @media (max-width: 600px) {
+      .about-strip { grid-template-columns: 1fr; }
+    }
+    .about-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+    .about-text {
+      font-size: 0.88rem;
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.8;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,0.45);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.75rem;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+    }
+    footer a { color: var(--gold-light); text-decoration: none; }
+
+    /* ── JRC notice banner ── */
+    .jrc-notice {
+      background: #fdf5f5;
+      border: 1px solid #f0d8d8;
+      border-left: 4px solid #6e0028;
+      border-radius: 3px;
+      padding: 1rem 1.4rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+    .jrc-notice-icon {
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+    .jrc-notice-text { color: var(--ink-light); }
+    .jrc-notice-text strong { color: #6e0028; font-weight: 600; }
+    .jrc-notice-text a { color: #6e0028; font-weight: 500; }
+  </style>
+</head>
+<body>
+
+<header>
+  <p class="header-eyebrow">Workshop Series</p>
+  <h1><em>CLEAR</em></h1>
+  <div class="gold-rule"></div>
+  <p class="header-subtitle">Collaborative Methods and Tools for Engineering and Evaluating Transparency in AI</p>
+</header>
+
+<main>
+  <p class="section-label">Editions</p>
+
+  <div class="jrc-notice">
+    <div class="jrc-notice-icon">📢</div>
+    <div class="jrc-notice-text">
+      <strong>ACM JRC Special Section Open.</strong>
+      The special section on transparency in AI stemming from CLEAR 2025 is currently accepting submissions. Submissions deadline: <strong>April 15, 2026</strong>.
+      See the <a href="2025/#jrc">full details and deadlines</a> on the 2025 edition page.
+    </div>
+  </div>
+
+  <div class="editions">
+    <!-- 2025 -->
+    <a href="2025/" class="card current">
+      <div class="card-year">2025</div>
+      <span class="card-badge">Completed · Spec. Section Open</span>
+      <div class="card-conference">ECAI 2025</div>
+      <div class="card-location">Bologna, Italy<br>European Conference on Artificial Intelligence</div>
+      <div class="card-arrow">View edition</div>
+    </a>
+
+    <!-- 2026 -->
+    <a href="2026/" class="card">
+      <div class="card-year">2026</div>
+      <span class="card-badge">Upcoming</span>
+      <div class="card-conference">IJCAI 2026</div>
+      <div class="card-location">International Joint Conference on Artificial Intelligence</div>
+      <div class="card-arrow">View edition</div>
+    </a>
+  </div>
+
+  <div class="about-strip">
+    <div class="about-heading">About<br>the Series</div>
+    <div class="about-text">
+      The CLEAR workshop series brings together researchers, practitioners, and stakeholders to address transparency in AI systems through collaborative and participatory approaches. Each edition is co-located with a major AI conference and features presentations, discussions, and community-building around trustworthy and transparent AI.
+    </div>
+  </div>
+</main>
+
+<footer>
+  &copy; CLEAR Workshop Series &nbsp;·&nbsp;
+  <a href="/cdn-cgi/l/email-protection#4f3b272a22263c61372e213b27203f203a23203a0f3a22

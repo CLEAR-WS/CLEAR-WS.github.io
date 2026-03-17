@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CLEAR 2025 — ECAI, Bologna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #6e0028;
+      --ink-light: #9e2a4a;
+      --cream: #fdf5f5;
+      --gold: #b8405a;
+      --gold-light: #d98090;
+      --divider: #f0d8d8;
+      --card-bg: #ffffff;
+    }
+
+    body { font-family: 'Jost', sans-serif; background: var(--cream); color: var(--ink); }
+
+    /* ── Top nav ── */
+    .topnav {
+      background: var(--ink);
+      padding: 0.75rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+    }
+    .topnav a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .topnav a:hover { color: var(--gold-light); }
+    .topnav .sep { color: rgba(255,255,255,0.2); }
+    .topnav .active { color: var(--gold-light); }
+
+    /* ── Header ── */
+    header {
+      background: var(--ink);
+      padding: 3.5rem 2rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -45deg, transparent, transparent 40px,
+        rgba(192,120,136,0.04) 40px, rgba(192,120,136,0.04) 41px
+      );
+      pointer-events: none;
+    }
+    .header-eyebrow {
+      font-size: 0.68rem; font-weight: 500; letter-spacing: 0.25em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 1rem;
+    }
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4.5vw, 3.5rem);
+      font-weight: 700; color: #fff; line-height: 1.15;
+      max-width: 760px; margin: 0 auto 1rem;
+    }
+    header h1 em { color: var(--gold-light); font-style: italic; }
+    .header-meta {
+      font-size: 0.82rem; font-weight: 300; letter-spacing: 0.05em;
+      color: rgba(255,255,255,0.5);
+    }
+    .header-meta strong { color: rgba(255,255,255,0.8); font-weight: 500; }
+    .gold-rule { width: 48px; height: 2px; background: var(--gold); margin: 1.4rem auto; }
+
+    /* ── Layout ── */
+    .page { max-width: 920px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+
+    /* ── Section ── */
+    .section { margin-bottom: 3.5rem; }
+    .section-label {
+      font-size: 0.65rem; font-weight: 600; letter-spacing: 0.25em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem;
+      padding-bottom: 0.6rem; border-bottom: 1px solid var(--divider);
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem; font-weight: 600; margin-bottom: 1rem; line-height: 1.2;
+    }
+    h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;
+    }
+    p { font-size: 0.9rem; font-weight: 300; line-height: 1.85; color: var(--ink-light); margin-bottom: 0.9rem; }
+    ul { list-style: none; padding: 0; }
+    ul li {
+      font-size: 0.88rem; font-weight: 300; line-height: 1.7;
+      color: var(--ink-light); padding: 0.25rem 0 0.25rem 1.1rem; position: relative;
+    }
+    ul li::before {
+      content: '—'; position: absolute; left: 0;
+      color: var(--gold); font-size: 0.8rem;
+    }
+    a { color: var(--gold); }
+
+    /* ── Schedule ── */
+    .schedule { display: flex; flex-direction: column; gap: 0; }
+    .schedule-item {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 0;
+      border-bottom: 1px solid var(--divider);
+    }
+    .schedule-item:first-child { border-top: 1px solid var(--divider); }
+    .schedule-time {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em;
+      color: var(--gold); padding: 1rem 1rem 1rem 0;
+      border-right: 1px solid var(--divider);
+    }
+    .schedule-content { padding: 1rem 0 1rem 1.2rem; }
+    .schedule-title {
+      font-size: 0.88rem; font-weight: 500; color: var(--ink); margin-bottom: 0.15rem;
+    }
+    .schedule-authors {
+      font-size: 0.78rem; font-weight: 300; color: var(--ink-light); font-style: italic;
+    }
+    .schedule-break {
+      background: rgba(192,120,136,0.06);
+    }
+    .schedule-break .schedule-title { color: var(--gold); font-weight: 400; }
+    .schedule-session-header {
+      background: var(--ink);
+      grid-column: 1 / -1;
+      padding: 0.5rem 1rem;
+      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--gold-light);
+    }
+
+    @media (max-width: 540px) {
+      .schedule-item { grid-template-columns: 1fr; }
+      .schedule-time { border-right: none; border-bottom: 1px solid var(--divider); padding: 0.6rem 0; }
+      .schedule-content { padding: 0.6rem 0; }
+    }
+
+    /* ── Papers grid ── */
+    .papers { display: flex; flex-direction: column; gap: 1px; background: var(--divider); }
+    .paper {
+      background: var(--card-bg);
+      padding: 1.2rem 1.5rem;
+    }
+    .paper-title {
+      font-size: 0.9rem; font-weight: 500; color: var(--ink);
+      margin-bottom: 0.3rem; line-height: 1.4;
+    }
+    .paper-authors {
+      font-size: 0.78rem; font-weight: 300; color: var(--ink-light); font-style: italic;
+      margin-bottom: 0.3rem;
+    }
+    .paper-link {
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.06em;
+      color: var(--gold); text-decoration: none; text-transform: uppercase;
+    }
+    .paper-link:hover { text-decoration: underline; }
+
+    /* ── People ── */
+    .people-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .person {
+      background: var(--card-bg);
+      border: 1px solid var(--divider);
+      padding: 1rem 1.2rem;
+    }
+    .person-name { font-size: 0.88rem; font-weight: 500; color: var(--ink); margin-bottom: 0.2rem; }
+    .person-affiliation { font-size: 0.75rem; font-weight: 300; color: var(--ink-light); line-height: 1.4; }
+
+    /* ── Dates table ── */
+    .dates { display: flex; flex-direction: column; gap: 0; }
+    .date-row {
+      display: grid; grid-template-columns: 1fr 1fr;
+      border-bottom: 1px solid var(--divider); padding: 0.8rem 0;
+      font-size: 0.85rem;
+    }
+    .date-row:first-child { border-top: 1px solid var(--divider); }
+    .date-label { font-weight: 300; color: var(--ink-light); }
+    .date-value { font-weight: 500; color: var(--ink); }
+
+    /* ── Challenges ── */
+    .challenges { display: flex; flex-direction: column; gap: 1rem; }
+    .challenge {
+      background: var(--card-bg);
+      border: 1px solid var(--divider);
+      border-left: 3px solid #b8405a;
+      padding: 1.4rem 1.5rem;
+    }
+    .challenge-num {
+      font-size: 0.65rem; font-weight: 600; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem;
+    }
+    .challenge h3 { font-size: 1rem; margin-bottom: 0.5rem; font-family: 'Jost', sans-serif; font-weight: 500; }
+    .challenge p { margin-bottom: 0; font-size: 0.84rem; }
+
+    /* ── Special issue box ── */
+    .special-issue {
+      background: var(--ink);
+      color: #fff;
+      padding: 2rem 2.2rem;
+      border-left: 3px solid #b8405a;
+    }
+    .special-issue .section-label { color: var(--gold-light); border-color: rgba(255,255,255,0.15); }
+    .special-issue h2 { color: #fff; }
+    .special-issue p { color: rgba(255,255,255,0.65); }
+    .special-issue a { color: var(--gold-light); }
+    .special-issue .date-row { border-color: rgba(255,255,255,0.1); }
+    .special-issue .date-label { color: rgba(255,255,255,0.5); }
+    .special-issue .date-value { color: rgba(255,255,255,0.9); }
+    .special-issue ul li { color: rgba(255,255,255,0.65); }
+
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,0.45);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.75rem;
+      font-weight: 300;
+    }
+    footer a { color: var(--gold-light); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<!-- Top navigation -->
+<nav class="topnav">
+  <a href="../">Series Home</a>
+  <span class="sep">/</span>
+  <span class="active">2025</span>
+  <span class="sep">·</span>
+  <a href="../2026/">2026 →</a>
+</nav>
+
+<!-- Header -->
+<header>
+  <p class="header-eyebrow">CLEAR-AI Workshop · ECAI 2025 · Bologna, Italy</p>
+  <h1><em>CLEAR</em> — Collaborative Methods and Tools for<br>Engineering and Evaluating Transparency in AI</h1>
+  <div class="gold-rule"></div>
+  <p class="header-meta"><strong>European Conference on Artificial Intelligence</strong> &nbsp;·&nbsp; Bologna, Italy &nbsp;·&nbsp; 2025</p>
+</header>
+
+<div class="page">
+
+  <!-- Schedule -->
+  <div class="section">
+    <p class="section-label">Workshop Schedule</p>
+
+    <p style="font-size:0.8rem;font-weight:500;letter-spacing:0.08em;color:var(--ink);margin-bottom:1rem;">Morning Session</p>
+    <div class="schedule">
+      <div class="schedule-item">
+        <div class="schedule-time">09:30 – 10:30</div>
+        <div class="schedule-content">
+          <div class="schedule-title">Welcome &amp; Introduction</div>
+          <div class="schedule-title" style="margin-top:0.5rem;font-style:italic">
+            "Enhancing Active Learning efficiency with a Recommendation System based on Annotator Accuracy, Mood, and Fatigue"
+          </div>
+          <div class="schedule-authors">Diana Mortágua, Luis Macedo and F. Amílcar Cardoso</div>
+        </div>
+      </div>
+      <div class="schedule-item schedule-break">
+        <div class="schedule-time">10:30 – 11:00</div>
+        <div class="schedule-content">
+          <div class="schedule-title">☕ Coffee Break</div>
+        </div>
+      </div>
+      <div class="schedule-session-header">Session 1: Presentations</div>
+      <div class="schedule-item">
+        <div class="schedule-time">11:00 – 12:30</div>
+        <div class="schedule-content">
+          <div class="schedule-title">"A Visual Reader's Eye for Image-Generation AI"</div>
+          <div class="schedule-authors">Randi Cecchine and Martha Larson</div>
+          <br>
+          <div class="schedule-title">"Uncertainty-Guided Expert-AI Collaboration for Efficient Soil Horizon Annotation"</div>
+          <div class="schedule-authors">Teodor Chiaburu, Vipin Singh, Frank Haußer and Felix Biessmann</div>
+          <br>
+          <div class="schedule-title">"Towards Transparent and Interpretable Credit Risk Models: Classifier Selection Insights from Australia, Germany, and Taiwan"</div>
+          <div class="schedule-authors">Krzysztof Lorenz, Piotr Gutowski, Anna Drab-Kurowska, Agnieszka Budziewicz-Guźlecka, Ewelina Gutowska, Magdalena Majchrzak, Tymoteusz Miller, Irmina Durlik and Ewelina Kostecka</div>
+        </div>
+      </div>
+      <div class="schedule-item schedule-break">
+        <div class="schedule-time">12:30 – 14:00</div>
+        <div class="schedule-content">
+          <div class="schedule-title">🍽️ Lunch Break</div>
+        </div>
+      </div>
+    </div>
+
+    <p style="font-size:0.8rem;font-weight:500;letter-spacing:0.08em;color:var(--ink);margin:1.5rem 0 1rem;">Afternoon Session</p>
+    <div class="schedule">
+      <div class="schedule-session-header">Session 2: Presentations</div>
+      <div class="schedule-item">
+        <div class="schedule-time">14:00 – 15:30</div>
+        <div class="schedule-content">
+          <div class="schedule-title">"Information Flow Modeling for Transparent and Accountable AI Act Assessment"</div>
+          <div class="schedule-authors">Mattias Brännström, Themis Xanthopoulou and Lili Jiang</div>
+          <br>
+          <div class="schedule-title">"The Machinery of Government: Bureaucracy, Automation and Institutional Black-Boxing"</div>
+          <div class="schedule-authors">Diletta Huyskes</div>
+          <br>
+          <div class="schedule-title">"Making Privacy Risks Transparent: Causal Analysis of Generalization and Membership Inference Attack in Differentially Private SGD"</div>
+          <div class="schedule-authors">Zhou Zhou and Lili Jiang</div>
+        </div>
+      </div>
+      <div class="schedule-item schedule-break">
+        <div class="schedule-time">15:30 – 16:00</div>
+        <div class="schedule-content"><div class="schedule-title">☕ Coffee Break</div></div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-time">16:00 – 17:00</div>
+        <div class="schedule-content">
+          <div class="schedule-title">Roundtable Discussion</div>
+          <div class="schedule-authors">Interactive discussion with presenters and organizers</div>
+        </div>
+      </div>
+      <div class="schedule-item">
+        <div class="schedule-time">17:00 – 17:15</div>
+        <div class="schedule-content"><div class="schedule-title">Closing Remarks</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accepted Papers -->
+  <div class="section">
+    <p class="section-label">Accepted Papers</p>
+    <div class="papers">
+      <div class="paper">
+        <div class="paper-title">"Enhancing Active Learning efficiency with a Recommendation System based on Annotator Accuracy, Mood, and Fatigue"</div>
+        <div class="paper-authors">Diana Mortágua, Luis Macedo and F. Amílcar Cardoso</div>
+      </div>
+      <div class="paper">
+        <div class="paper-title">"A Visual Reader's Eye for Image-Generation AI"</div>
+        <div class="paper-authors">Randi Cecchine and Martha Larson</div>
+      </div>
+      <div class="paper">
+        <div class="paper-title">"Uncertainty-Guided Expert-AI Collaboration for Efficient Soil Horizon Annotation"</div>
+        <div class="paper-authors">Teodor Chiaburu, Vipin Singh, Frank Haußer and Felix Biessmann</div>
+        <a class="paper-link" href="https://arxiv.org/abs/2509.24873" target="_blank">📄 Full text</a>
+      </div>
+      <div class="paper">
+        <div class="paper-title">"Towards Transparent and Interpretable Credit Risk Models: Classifier Selection Insights from Australia, Germany, and Taiwan"</div>
+        <div class="paper-authors">Krzysztof Lorenz, Piotr Gutowski, Anna Drab-Kurowska, Agnieszka Budziewicz-Guźlecka, Ewelina Gutowska, Magdalena Majchrzak, Tymoteusz Miller, Irmina Durlik and Ewelina Kostecka</div>
+      </div>
+      <div class="paper">
+        <div class="paper-title">"Information Flow Modeling for Transparent and Accountable AI Act Assessment"</div>
+        <div class="paper-authors">Mattias Brännström, Themis Xanthopoulou and Lili Jiang</div>
+      </div>
+      <div class="paper">
+        <div class="paper-title">"The Machinery of Government: Bureaucracy, Automation and Institutional Black-Boxing"</div>
+        <div class="paper-authors">Diletta Huyskes</div>
+      </div>
+      <div class="paper">
+        <div class="paper-title">"Making Privacy Risks Transparent: Causal Analysis of Generalization and Membership Inference Attack in Differentially Private SGD"</div>
+        <div class="paper-authors">Zhou Zhou and Lili Jiang</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="section">
+    <p class="section-label">About the Workshop</p>
+    <p>As AI systems become integral to critical decision-making processes, ensuring their transparency, fairness, and accountability is more essential than ever. The AI Act, the world's first attempt to systematically regulate artificial intelligence, places significant emphasis on this need. In particular, the Act establishes transparency as a fundamental principle, aiming to safeguard user rights and foster trust and reliability in new technologies.</p>
+    <p>Achieving these objectives necessitates not only the establishment of robust technical frameworks but also the active engagement of a diverse range of stakeholders to ensure that the development of AI is aligned with societal values. The CLEAR-AI Workshop addresses the critical need for interdisciplinary collaboration to advance methods, tools, and evaluation frameworks that ensure transparency, fairness, and trustworthiness in AI systems.</p>
+    <p>The CLEAR-AI Workshop aligns with ECAI 2025's mission of advancing sustainable AI by promoting transparency, participatory approaches, and rigorous methods that ensure accountability and societal alignment.</p>
+  </div>
+
+  <!-- Challenges -->
+  <div class="section">
+    <p class="section-label">Workshop Challenges</p>
+    <div class="challenges">
+      <div class="challenge">
+        <div class="challenge-num">Challenge 1</div>
+        <h3>Reframing Transparency as a Relation, Not a Static Property</h3>
+        <p>Transparency is too often treated as something systems have rather than something they provide in relation to those who use, audit, or are affected by them. This theme challenges us to rethink transparency as an active relation between information and its audience.</p>
+      </div>
+      <div class="challenge">
+        <div class="challenge-num">Challenge 2</div>
+        <h3>Connecting Methods to Meaning and Purpose</h3>
+        <p>Technical tools and conceptual models for transparency abound, but they often operate without a clear sense of for whom and for what they exist. This theme explores how metrics, explanations, and frameworks can be oriented toward concrete purposes—whether legal accountability, informed oversight, or effective user understanding.</p>
+      </div>
+      <div class="challenge">
+        <div class="challenge-num">Challenge 3</div>
+        <h3>Moving Toward Stakeholder-Centered Transparency</h3>
+        <p>The ultimate challenge remains to make transparency usable, relevant, and responsive. This theme looks at how today's methods can evolve—through participatory, methodological, or institutional innovation—toward transparency that genuinely empowers those who depend on it.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Topics of Interest -->
+  <div class="section">
+    <p class="section-label">Topics of Interest</p>
+    <ul>
+      <li>Innovative methodologies for designing transparent AI systems for meeting stakeholder needs</li>
+      <li>Tools, metrics, and techniques for monitoring and ensuring transparency in AI</li>
+      <li>Transparency risk assessments</li>
+      <li>Participatory design and co-creation methodological approaches involving diverse stakeholders</li>
+      <li>Formal frameworks for evaluating transparency</li>
+      <li>Case studies and best practices for transparent AI in real-world applications</li>
+      <li>Knowledge elicitation methods during participatory settings for AI transparency</li>
+      <li>Conceptual translation among stakeholders from diverse backgrounds</li>
+      <li>Legal transparency requirements</li>
+    </ul>
+  </div>
+
+  <!-- Special Issue -->
+  <div class="section" id="jrc">
+    <div class="special-issue">
+      <p class="section-label" style="display:flex;align-items:center;gap:0.5rem;">
+        Special Section &nbsp;<span style="background:#b8405a;color:#fff;font-size:0.6rem;padding:0.2rem 0.5rem;border-radius:2px;letter-spacing:0.1em;">OPEN</span>
+      </p>
+      <h2>ACM Journal on Responsible Computing</h2>
+      <p style="margin-bottom:1.2rem;">Following the workshop, a special section in the <a href="https://dl.acm.org/journal/jrc" target="_blank">ACM Journal on Responsible Computing (JRC)</a> dedicated to transparency in AI systems is currently open for submissions. See the <a href="https://dl.acm.org/pb-assets/static_journal_pages/jrc/pdf/ACM-JRC-CFP-CLEAR-2025-1773081310973.pdf" target="_blank">full call for papers (PDF)</a>.</p>
+      <div class="dates">
+        <div class="date-row"><span class="date-label">Submissions deadline</span><span class="date-value">April 15, 2026</span></div>
+        <div class="date-row"><span class="date-label">First-round review decisions</span><span class="date-value">June 15, 2026</span></div>
+        <div class="date-row"><span class="date-label">Deadline for revision submissions</span><span class="date-value">July 8, 2026</span></div>
+        <div class="date-row"><span class="date-label">Notification of final decisions</span><span class="date-value">July 31, 2026</span></div>
+        <div class="date-row"><span class="date-label">Camera-ready manuscripts</span><span class="date-value">August 22, 2026</span></div>
+        <div class="date-row"><span class="date-label">Tentative publication</span><span class="date-value">End of 2026</span></div>
+      </div>
+      <p style="margin-top:1rem;font-size:0.82rem;">Contact: <strong>Francien Dechesne</strong> — <a href="mailto:f.dechesne@law.leidenuniv.nl">f.dechesne@law.leidenuniv.nl</a></p>
+    </div>
+  </div>
+
+  <!-- Important Dates -->
+  <div class="section">
+    <p class="section-label">Important Dates (Submissions)</p>
+    <div class="dates">
+      <div class="date-row"><span class="date-label">Open for submissions</span><span class="date-value">April 15, 2025</span></div>
+      <div class="date-row"><span class="date-label">1st submission cut-off</span><span class="date-value">June 15, 2025</span></div>
+      <div class="date-row"><span class="date-label">1st round notification</span><span class="date-value">July 15, 2025</span></div>
+      <div class="date-row"><span class="date-label">2nd submission cut-off</span><span class="date-value">August 15, 2025</span></div>
+      <div class="date-row"><span class="date-label">2nd round notification</span><span class="date-value">August 20, 2025</span></div>
+      <div class="date-row"><span class="date-label">Final schedule published</span><span class="date-value">October 22, 2025</span></div>
+    </div>
+  </div>
+
+  <!-- Organising Committee -->
+  <div class="section">
+    <p class="section-label">Organising Committee</p>
+    <div class="people-grid">
+      <div class="person">
+        <div class="person-name">Themis Dimitra Xanthopoulou</div>
+        <div class="person-affiliation">Dept. of Computing Science, Umeå University</div>
+      </div>
+      <div class="person">
+        <div class="person-name">Rachele Carli</div>
+        <div class="person-affiliation">Dept. of Computing Science, Umeå University</div>
+      </div>
+      <div class="person">
+        <div class="person-name">Andreas Brännström</div>
+        <div class="person-affiliation">Dept. of Computing Science, Umeå University</div>
+      </div>
+      <div class="person">
+        <div class="person-name">Francien Dechesne</div>
+        <div class="person-affiliation">eLaw Center for Law and Digital Technologies, Leiden University</div>
+      </div>
+      <div class="person">
+        <div class="person-name">Chiara Gallese</div>
+        <div class="person-affiliation">Dept. of Law, University of Turin</div>
+      </div>
+      <div class="person">
+        <div class="person-name">Mattias Brännström</div>
+        <div class="person-affiliation">Dept. of Computing Science, Umeå University</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Advisory Board -->
+  <div class="section">
+    <p class="section-label">Advisory Board</p>
+    <div class="people-grid">
+      <div class="person">
+        <div class="person-name">Virginia Dignum</div>
+        <div class="person-affiliation">AI Policy Lab</div>
+      </div>
+      <div class="person">
+        <div class="person-name">Juan Carlos Nieves</div>
+        <div class="person-affiliation">Umeå University</div>
+      </div>
+      <div class="person">
+        <div class="person-name">Neil Yorke-Smith</div>
+        <div class="person-affiliation">TU Delft</div>
+      </div>
+      <div class="person">
+        <div class="person-name">Tim Miller</div>
+        <div class="person-affiliation">University of Queensland</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Program Committee -->
+  <div class="section">
+    <p class="section-label">Program Committee</p>
+    <div class="people-grid">
+      <div class="person"><div class="person-name">Tony Ribeiro</div><div class="person-affiliation">Laboratoire des Sciences du Numérique de Nantes</div></div>
+      <div class="person"><div class="person-name">Agate Balayn</div><div class="person-affiliation">TU Delft</div></div>
+      <div class="person"><div class="person-name">Daniel Kostic</div><div class="person-affiliation">Leiden University</div></div>
+      <div class="person"><div class="person-name">Giuseppe Primiero</div><div class="person-affiliation">University of Milan</div></div>
+      <div class="person"><div class="person-name">Jayati Deshmukh</div><div class="person-affiliation">University of Southampton</div></div>
+      <div class="person"><div class="person-name">Imane Hmiddou</div><div class="person-affiliation">ALLAI</div></div>
+      <div class="person"><div class="person-name">Amro Najjar</div><div class="person-affiliation">Luxembourg Institute of Science and Technology</div></div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="section">
+    <p class="section-label">Contact</p>
+    <p>Questions regarding the workshop: <strong>Themis Dimitra Xanthopoulou</strong>, Umeå University, Sweden —
+      <a href="/cdn-cgi/l/email-protection#3c48545951554f12445d524854534c53495053497c495149124f59"><span class="__cf_email__" data-cfemail="0c78646961657f22746d627864637c63796063794c796179227f69">[email&#160;protected]</span></a>
+    </p>
+    <p>Venue: <a h
